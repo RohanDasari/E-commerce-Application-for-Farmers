@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_activity_background"
+    tools:context=".FarmerDashboard">
+
+    <Button
+        android:id="@+id/fdprofile"
+        android:layout_width="168dp"
+        android:layout_height="73dp"
+        android:alpha="0.60"
+        android:onClick="profileclick"
+        android:text="My Products"
+        android:textColor="#000000"
+        android:textColorHighlight="#070606"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.221" />
+
+    <Button
+        android:id="@+id/fdaddproduct"
+        android:layout_width="168dp"
+        android:layout_height="73dp"
+        android:alpha="0.60"
+        android:onClick="addproductclick"
+        android:text="Add Product"
+        android:textColorLink="#0E0D0D"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fdprofile"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <Button
+        android:id="@+id/fdsignout"
+        android:layout_width="168dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="112dp"
+        android:alpha="0.60"
+        android:onClick="SignOutClick"
+        android:text="Sign-Out"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fdaddproduct" />
+</androidx.constraintlayout.widget.ConstraintLayout>

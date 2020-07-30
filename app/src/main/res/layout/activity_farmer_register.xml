@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_activity_background"
+    tools:context=".FarmerRegisterActivity">
+
+    <EditText
+        android:id="@+id/first_name"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="8dp"
+        android:layout_width="340dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="556dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553" />
+
+    <EditText
+        android:id="@+id/last_name"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="8dp"
+        android:layout_width="340dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/first_name"
+        app:layout_constraintTop_toBottomOf="@+id/first_name" />
+
+    <EditText
+        android:id="@+id/mob_no"
+        android:drawableLeft="@drawable/ic_phone_black_24dp"
+        android:drawablePadding="8dp"
+        android:layout_width="340dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Mobile Number "
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/last_name"
+        app:layout_constraintTop_toBottomOf="@+id/last_name" />
+
+    <EditText
+        android:id="@+id/em"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:drawablePadding="8dp"
+        android:layout_width="340dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/mob_no"
+        app:layout_constraintTop_toBottomOf="@+id/mob_no" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="8dp"
+        android:layout_width="340dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/em"
+        app:layout_constraintTop_toBottomOf="@+id/em" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="339dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/botton_background"
+        android:onClick="btnClick"
+        android:text="Resister"
+        android:textColor="#9E110F0F"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/confirmpass"
+        app:layout_constraintTop_toBottomOf="@+id/confirmpass" />
+
+    <EditText
+        android:id="@+id/confirmpass"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="8dp"
+        android:layout_width="340dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/pass"
+        app:layout_constraintTop_toBottomOf="@+id/pass" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

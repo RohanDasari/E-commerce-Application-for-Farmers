@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_activity_background"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/em"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:drawablePadding="8dp"
+        android:layout_width="340dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.287" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="8dp"
+        android:layout_width="340dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/em"
+        app:layout_constraintTop_toBottomOf="@+id/em" />
+
+    <RadioGroup
+        android:id="@+id/radiogrp"
+        android:layout_width="139dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="344dp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="@+id/pass"
+        app:layout_constraintTop_toBottomOf="@+id/pass"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Farmer"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buyer"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="326dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="164dp"
+        android:background="@drawable/botton_background"
+        android:onClick="loginClick"
+        android:text="Login"
+        android:textColor="#9E110F0F"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/pass"
+        app:layout_constraintTop_toBottomOf="@+id/pass" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1089504495856",
+    "firebase_url": "https://croppot-77cda.firebaseio.com",
+    "project_id": "croppot-77cda",
+    "storage_bucket": "croppot-77cda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089504495856:android:f92909017ca5364c3c9a35",
+        "android_client_info": {
+          "package_name": "com.rahul.farmerproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089504495856-oejf7ihp96f0975d8vci7sjqu82ppu87.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rahul.farmerproject",
+            "certificate_hash": "739b36142a1bb8ce6fd33e069c165c20e2cd03d5"
+          }
+        },
+        {
+          "client_id": "1089504495856-9njjsh3vmi7ek3bp4enoop7mo1fbleqa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rahul.farmerproject",
+            "certificate_hash": "79328c6fc2be0bad3acc37468a74e11de4445889"
+          }
+        },
+        {
+          "client_id": "1089504495856-ip9in8idpkbqfrp9ngfc5j4knfsbmd1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPaiepe_vxAauIU4KqtZUkFdfs6_V8Rdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089504495856-ip9in8idpkbqfrp9ngfc5j4knfsbmd1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
